@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import './variables';
+
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	appearance: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Play", sans-serif;
+	font-style: normal;
+	color: #fff;
+}
+
+::-webkit-scrollbar{
+	width: 0.6em;
+}
+
+::-webkit-scrollbar-track{
+	background: $colorFoot;
+	border-radius: 100vw;
+	margin-block: .2em;
+}
+
+::-webkit-scrollbar-thumb{
+	background: $colorAccent;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: $colorBg;
+}
+
+body{
+	height: 100dvh;
+	background: linear-gradient(to top, $colorBgDarker, $colorBg);
+	#root{
+		height: inherit;
+		// padding: calc($navHeight + 20px) 20px 20px 20px;
+		background-image: url(/assets/SyndikatBG.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}

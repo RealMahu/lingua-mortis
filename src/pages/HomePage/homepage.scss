@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.home-wrapper{
+	display: flex;
+	gap: 50px;
+	backdrop-filter: blur(5px);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+	padding: 20px;
+	.video-wrapper{
+		width: 70%;
+		overflow: hidden;
+		video{
+			width: 100%;
+			border-radius: 0 0 10px 0;
+			border: 2px solid #fff;
+			overflow: hidden;
+		}
+	}
+	.info-wrapper{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		text-align: justify;
+	}
+}

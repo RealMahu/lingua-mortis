@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+			"id": "1",
+			"userid": "1",
+			"nickname": "Astrapi",
+			"firstname": "Danny",
+			"lastname": "Böhm",
+			"email": "dannyboehm93@gmail.com",
+			"profilepic": "",
+			"birthday": "08-10-1993",
+			"charlevel": 60,
+			"mainrole": "damage",
+			"secondrole": "heal",
+			"usenickname": true,
+			"isloggedin": true,
+			"isadmin": true,
+			"postids": ["1"]
+		}
+  ],
+  "newsposts": [
+    {
+			"id": "1",
+			"postid": "1",
+			"title": "test",
+			"text": "a comment about post 1",
+			"date": "14-02-2024",
+			"time": "18:22:30",
+			"creator": "Astrapi",
+			"creatorid": "1"
+		}
+  ]
+}

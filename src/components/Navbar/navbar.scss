@@ -1,0 +1,95 @@
+@import "../../variables";
+
+nav{
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	height: $navHeight;
+	z-index: 9998;
+	.nav-wrapper{
+		background: $colorBg;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 25px;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+		.logo-wrapper{
+			height: fit-content;
+			user-select: none;
+			.logo-link{
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			img{
+				width: 50px;
+				height: 50px;
+			}
+		}
+		.link-wrapper{
+			height: fit-content;
+			align-items: center;
+			ul{
+				display: flex;
+				align-items: center;
+				a{
+					font-size: 18px;
+					padding: 20px;
+					&:hover{
+						color: $colorBgDarker;
+					}
+				}
+			}
+			.active[title~="navlink"]{
+				position: relative;
+				color: $colorBgDarker;
+					&::after{
+						content: "\F235";
+						font-family: "Bootstrap-Icons";
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						translate: -50%;
+						color: $colorBgDarker;
+					}
+			}
+			.profile-wrapper{
+				height: 40px;
+				position: relative;
+				cursor: pointer;
+				.avatar-wrapper{
+					height: inherit;
+					img{
+						width: 40px;
+						border: 2px solid #fff;
+						border-radius: 50%;
+					}
+				}
+				.profile-menu{
+					position: absolute;
+					top: 55px; right: 0;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-end;
+					height: fit-content;
+					box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+					hr{
+						border-top: 1px solid #fff;
+						width: 100%;
+					}
+					a{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						background-color: $colorBg;
+						width: 150px;
+						padding: 10px;
+						&:hover{
+							background-color: $colorAccent;
+						}
+					}
+				}
+			}
+		}
+	}
+}

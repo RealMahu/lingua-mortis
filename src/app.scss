@@ -1,0 +1,12 @@
+@import "./variables";
+
+main{
+	width: 100%;
+	height: 100%;
+	padding: calc($navHeight + 20px) 20px 20px 20px;
+	.main-wrapper{
+		background: $colorContentBg;
+		width: 100%;
+		height: 100%;
+	}
+}
