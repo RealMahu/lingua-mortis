@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-// import trailer from "../../assets/WerbeVideo_Lingua.mp4"
+import trailer from "../../assets/WerbeVideo_Lingua.mp4"
 import './homepage.scss'
 
 const HomePage = () => {
@@ -15,9 +15,9 @@ const HomePage = () => {
 	return (
 		<div className={`main-wrapper home-wrapper`}>
 			<div className='video-wrapper'>
-				{/* <video controls controlsList="nodownload noremoteplayback noplaybackrate" ref={videoRef}>
+				<video controls controlsList="nodownload noremoteplayback noplaybackrate" ref={videoRef}>
 					<source id="kompTrailer" src={trailer} type="video/mp4"/>
-				</video> */}
+				</video>
 			</div>
 			<div className='info-wrapper'>
 				<h2>Lingua Mortis</h2>

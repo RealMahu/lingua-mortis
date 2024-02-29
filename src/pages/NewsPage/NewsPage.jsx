@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const NewsPage = () => {
 	const [news, setNews] = useState(null)
@@ -22,11 +22,26 @@ const NewsPage = () => {
 		}
 	}
 
+	useEffect(() => {
+		fetchNews()
+	}, [])
+
 	return (
 		<div className={`main-wrapper news-wrapper`}>
 			{news && news.map(post => (
 				<div className='news-card'>
-					{post.img && (<img src="" alt="" />)}
+					{post.img && (<img className='news-card-thumbnail' src="" alt="" />)}
+					<div className='news-card-info'>
+						<h3>{post.title}</h3>
+						<p>{post.text}</p>
+					</div>
+					<div className='news-card-bottom'>
+						<div className='news-card-info'>
+							<small>{post.date}</small>
+							<small>{post.creator}</small>
+						</div>
+						<div className='news-card-author'></div>
+					</div>
 				</div>
 			))}
 		</div>
